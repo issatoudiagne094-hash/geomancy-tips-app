@@ -11,6 +11,16 @@
   --color-vip: #f59e0b; /* Amber 500 */
 }
 
+@layer utilities {
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.95); }
+  }
+  .animate-pulse-soft {
+    animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
 @layer base {
   body {
     @apply bg-zinc-950 text-zinc-100 font-sans antialiased;

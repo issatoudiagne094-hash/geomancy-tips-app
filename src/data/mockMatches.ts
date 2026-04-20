@@ -10,7 +10,9 @@ export const MOCK_MATCHES: Match[] = [
     competition: 'La Liga',
     dateTime: '2026-04-20T20:00:00Z',
     basicPrediction: '1',
+    exactScore: '3-1',
     isVip: true,
+    status: 'live',
     vipAnalysis: {
       signName: 'Latourou',
       elements: ['Feu', 'Air'],
@@ -26,7 +28,8 @@ export const MOCK_MATCHES: Match[] = [
     competition: 'Premier League',
     dateTime: '2026-04-21T19:45:00Z',
     basicPrediction: 'N',
-    isVip: false
+    isVip: false,
+    status: 'upcoming'
   },
   {
     id: '3',
@@ -38,6 +41,7 @@ export const MOCK_MATCHES: Match[] = [
     dateTime: '2026-04-22T21:00:00Z',
     basicPrediction: '1',
     isVip: true,
+    status: 'upcoming',
     vipAnalysis: {
       signName: 'Turabu',
       elements: ['Terre', 'Eau'],
@@ -53,6 +57,7 @@ export const MOCK_MATCHES: Match[] = [
     competition: 'Bundesliga',
     dateTime: '2026-04-23T18:30:00Z',
     basicPrediction: '1',
-    isVip: false
+    isVip: false,
+    status: 'finished'
   }
 ];
